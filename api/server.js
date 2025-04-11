@@ -1,5 +1,4 @@
 import app from "./app.js";
-import "./scripts/cleaner.js";
 
 process.env.LANG = "en_US.UTF-8";
 

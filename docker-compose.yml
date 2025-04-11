@@ -1,0 +1,15 @@
+services:
+  client:
+    build: .
+    ports:
+      - "9002:9000"
+    volumes:
+      - ./:/var/Conversor
+    working_dir: /var/Conversor
+    command: ["./startservices.sh"]
+    networks:
+      - webappnetwork
+
+networks:
+  webappnetwork:
+    driver: bridge
