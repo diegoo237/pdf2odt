@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Exibindo mensagens coloridas no terminal
-echo -e "\e[32;41mIniciando Conversor\e[0m"
+echo -e "\e[32;41mIniciando pdf2odt\e[0m"
 
 # Mostra a versão do Node.js
 echo -e "\e[32;41mVersão do NodeJs\e[0m"
@@ -17,7 +17,7 @@ pwd
 
 # Inicia o backend Express em background
 echo -e "\e[32;41mIniciando serviço Express em background\e[0m"
-cd /var/Conversor/api
+cd /var/pdf2odt/api
 npm start &
 
 # Aguarda um tempo para o backend iniciar antes de iniciar o frontend
@@ -26,5 +26,5 @@ sleep 5
 
 # Inicia o frontend (Vite) em primeiro plano
 echo -e "\e[32;41mIniciando serviço React/Vite\e[0m"
-cd /var/Conversor/src
+cd /var/pdf2odt/src
 npm run dev -- --host 0.0.0.0

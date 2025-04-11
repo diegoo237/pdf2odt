@@ -2,10 +2,11 @@ services:
   client:
     build: .
     ports:
+      - "5173:5173"
       - "9002:9000"
     volumes:
-      - ./:/var/Conversor
-    working_dir: /var/Conversor
+      - ./:/var/pdf2odt
+    working_dir: /var/pdf2odt
     command: ["./startservices.sh"]
     networks:
       - webappnetwork
