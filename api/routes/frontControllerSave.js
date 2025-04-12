@@ -4,15 +4,28 @@ import path from "path";
 import { Buffer } from "buffer";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+import fs from "fs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const uploadDir = path.join(__dirname, "../uploads/pdf");
+// Diretórios de upload
+const uploadBaseDir = path.join(__dirname, "../uploads");
+const pdfDir = path.join(uploadBaseDir, "pdf");
+const docxDir = path.join(uploadBaseDir, "docx");
+const odtDir = path.join(uploadBaseDir, "odt");
+
+function ensureDirExists(dirPath) {
+  if (!fs.existsSync(dirPath)) {
+    fs.mkdirSync(dirPath, { recursive: true });
+  }
+}
+
+[uploadBaseDir, pdfDir, docxDir, odtDir].forEach(ensureDirExists);
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, uploadDir);
+    cb(null, pdfDir); // por padrão, salvando os arquivos no pdfDir
   },
   filename: function (req, file, cb) {
     const utf8Name = Buffer.from(file.originalname, "latin1").toString("utf8");
