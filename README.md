@@ -10,17 +10,17 @@ Aplicação para envio e conversão de arquivos PDF para outros formatos como DO
 
 ## 🚀 Como usar
 
-## 1. Clone o repositório
+1. Clone o repositório
 
 2. Instale as dependências na raiz do projeto
-cd pdf2odt
-npm install
+- cd pdf2odt
+- npm install
 
 3. Instale as dependências na pasta api
-cd api
-npm install
+- cd api
+- npm install
 
 4. Suba os containers com Docker
-Certifique-se de que você tenha o Docker e o Docker Compose instalados em sua máquina.
-execute "docker compose up --build"
-A aplicacao estara disponivel em http://localhost:5173/
+- Certifique-se de que você tenha o Docker e o Docker Compose instalados em sua máquina.
+- execute "docker compose up --build"
+- A aplicacao estara disponivel em http://localhost:5173/
