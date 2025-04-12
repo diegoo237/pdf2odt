@@ -1,12 +1,26 @@
-# React + Vite
+# 📄 pdf2odt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação para envio e conversão de arquivos PDF para outros formatos como DOCX e ODT. A aplicação é dividida em duas partes:
 
-Currently, two official plugins are available:
+- **Frontend:** Desenvolvido em React
+- **Backend:** API em Node.js com Express
+- **Ambiente:** Gerenciado com Docker + Docker Compose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Como usar
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 1. Clone o repositório
+
+2. Instale as dependências na raiz do projeto
+cd pdf2odt
+npm install
+
+3. Instale as dependências na pasta api
+cd api
+npm install
+
+4. Suba os containers com Docker
+Certifique-se de que você tenha o Docker e o Docker Compose instalados em sua máquina.
+execute "docker compose up --build"
+A aplicacao estara disponivel em http://localhost:5173/
