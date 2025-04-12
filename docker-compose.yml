@@ -7,7 +7,7 @@ services:
     volumes:
       - ./:/var/pdf2odt
     working_dir: /var/pdf2odt
-    command: ["./startservices.sh"]
+    command: ["./api/scripts/startservices.sh"]
     networks:
       - webappnetwork
 
