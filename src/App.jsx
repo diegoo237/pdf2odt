@@ -1,7 +1,8 @@
 import "./index.css";
+import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import AppNav from "./components/AppNav";
+import AppNav from "./components/nav/AppNav";
 import HomePage from "./pages/HomePage";
 import ConvertPage from "./pages/ConvertPage";
 import AboutPage from "./pages/AboutPage";
