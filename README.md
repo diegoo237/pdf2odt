@@ -1,26 +1,26 @@
 # 📄 pdf2odt
 
-Aplicação para envio e conversão de arquivos PDF para outros formatos como DOCX e ODT. A aplicação é dividida em duas partes:
+Application for uploading and converting PDF files to other formats such as DOCX and ODT. The application is divided into two parts:
 
-- **Frontend:** Desenvolvido em React
-- **Backend:** API em Node.js com Express
-- **Ambiente:** Gerenciado com Docker + Docker Compose
+- **Frontend:** Developed with React  
+- **Backend:** API built with Node.js and Express  
+- **Environment:** Managed with Docker + Docker Compose
 
 ---
 
-## 🚀 Como usar
+## 🚀 How to Use
 
-1. Clone o repositório
+1. Clone the repository
 
-2. Instale as dependências na raiz do projeto
+2. Install the dependencies in the project root
 - cd pdf2odt
 - npm install
 
-3. Instale as dependências na pasta api
+3. Install the dependencies in the api folder
 - cd api
 - npm install
 
-4. Suba os containers com Docker
-- Certifique-se de que você tenha o Docker e o Docker Compose instalados em sua máquina.
-- execute "docker compose up --build"
-- A aplicacao estara disponivel em http://localhost:5173/
+4. Start the containers with Docker
+- Make sure you have Docker and Docker Compose installed on your machine.
+- Run "docker compose up --build"
+- The application will be available at http://localhost:5173/
